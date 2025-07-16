@@ -65,52 +65,66 @@
                     </datalist>
 
                     <br>
-                    <a href="https://login.id.singpass.gov.sg/main" class="btn btn-danger"
-                        style="padding-left: 20px; padding-right: 25px; ">
-                        <strong style="letter-spacing: 0.03em; font-weight: 630;">Retrieve info From</strong>
-                        <strong style="letter-spacing: 0.05em; padding-left: 3px; font-weight: 830;">SingPass</strong>
-                    </a>
+
+                    <div>
+                        <label for="nric" class="form-label">NRIC/FIN</label>
+                        <input type="tel" class="form-control" id="nric" placeholder="S12345678">
+                    </div>
+
                     <br>
+
+                    <div class="input-group" style="display: flex; flex-direction: column;">
+                        <div style="font-size: 1.05em; margin-bottom: 10px;">Address</div>
+                        <div style="display: flex; flex-direction: row;">
+                            <span class="input-group-text">Singapore</span>
+                            <input type="text" aria-label="address" class="form-control"
+                                placeholder="Residential-address">
+                            <input type="text" aria-label="postal" class="form-control" placeholder="Postal-code">
+                        </div>
+                    </div>
+
                     <br>
+
                     <div>
                         <label for="formGroupExampleInput2" class="form-label">Email</label>
                         <input type="email" class="form-control" id="formGroupExampleInput2"
                             placeholder="Enter your email">
                     </div>
+
                     <br>
+
+                    <div style="font-size: 1.05em; margin-bottom: 10px;">Gender</div>
+                    <div id="gender" style="display: flex; flex-direction: rows; gap: 50px;">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" id="radio-male">
+                            <label class="form-check-label" for="radio-male">
+                                Male
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" id="radio-female" checked>
+                            <label class="form-check-label" for="radio-female">
+                                Female
+                            </label>
+                        </div>
+                    </div>
+                    <br>
+                    <a href="https://login.id.singpass.gov.sg/main" class="btn btn-danger"
+                        style="padding-left: 13px; padding-right: 12px; ">
+                        <strong style="letter-spacing: 0.03em; font-weight: 630;">Retrieve info From</strong>
+                        <strong style="letter-spacing: 0.05em; font-weight: 830;">SingPass</strong>
+                    </a>
+                    <br>
+                    <hr><br>
                     <div>
                         <label for="formGroupExampleInput" class="form-label">Password</label>
-                        <input type="password" class="form-control" id="Password"
-                            placeholder="Enter your password">
+                        <input type="password" class="form-control" id="Password" placeholder="Enter your password">
                     </div>
                     <br>
                     <div>
                         <label for="formGroupExampleInput2" class="form-label">Confirm Password</label>
                         <input type="password" class="form-control" id="ConfirmPassword"
                             placeholder="Confirm your password">
-                    </div>
-                    <br>
-
-                    <div style="font-size: 1.05em; margin-bottom: 10px;">Gender</div>
-                    <div id="gender" style="display: flex; flex-direction: rows; gap: 50px;">
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
-                            <label class="form-check-label" for="radioDefault1">
-                                Male
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault2" checked>
-                            <label class="form-check-label" for="radioDefault2">
-                                Female
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
-                            <label class="form-check-label" for="radioDefault1">
-                                Unwilling to Say
-                            </label>
-                        </div>
                     </div>
                     <br>
                     <hr><br>
@@ -128,10 +142,12 @@
                             capability and knowledge.
                         </label>
                     </div>
-                    <p style="font-size: small; color: rgb(220, 18, 18);">* Anyone who provides illegal or fake information will be held criminally liable in accordance with the law.</p>
+                    <p style="font-size: small; color: rgb(220, 18, 18);">* Anyone who provides illegal or fake
+                        information will be held criminally liable in accordance with the law.</p>
                     <br>
                     <div class="card" style="width: 18rem;">
-                        <div class="card-body" style="background-color: rgb(212, 212, 212); border-radius: 0px; box-shadow: 10px;">
+                        <div class="card-body"
+                            style="background-color: rgb(212, 212, 212); border-radius: 0px; box-shadow: 10px;">
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" value="" id="checkRobot">
                                 <label class="form-check-label" for="checkIndeterminate" style="margin-left: 10px;">
@@ -139,8 +155,9 @@
                                 </label>
                             </div>
                             <div style="display: flex;">
-                                <div style="color: rgb(93, 92, 92);">Restrictions for crawler: </div> <a href="https://www.google.com/robots.txt"
-                                    class="card-link" style="margin-left: 5px;"> robot.txt</a>
+                                <div style="color: rgb(93, 92, 92);">Restrictions for crawler: </div> <a
+                                    href="https://www.google.com/robots.txt" class="card-link"
+                                    style="margin-left: 5px;"> robot.txt</a>
                             </div>
                         </div>
                     </div>
@@ -158,4 +175,5 @@
 
 
 </body>
+
 </html>
