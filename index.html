@@ -68,7 +68,8 @@
 
                     <div>
                         <label for="nric" class="form-label">NRIC/FIN</label>
-                        <input type="id" class="form-control" id="nric" placeholder="S12345678">
+                        <input type="tel" class="form-control" id="nric"
+                            placeholder="S12345678">
                     </div>
 
                     <br>
@@ -96,14 +97,14 @@
                     <div style="font-size: 1.05em; margin-bottom: 10px;">Gender</div>
                     <div id="gender" style="display: flex; flex-direction: rows; gap: 50px;">
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" id="radio-male">
-                            <label class="form-check-label" for="radio-male">
+                            <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
+                            <label class="form-check-label" for="radioDefault1">
                                 Male
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" id="radio-female" checked>
-                            <label class="form-check-label" for="radio-female">
+                            <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault2" checked>
+                            <label class="form-check-label" for="radioDefault2">
                                 Female
                             </label>
                         </div>
@@ -126,8 +127,7 @@
                         <input type="password" class="form-control" id="ConfirmPassword"
                             placeholder="Confirm your password">
                     </div>
-                    <br>
-                    <hr><br>
+                    <br><hr><br>
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="" id="Check1">
                         <label class="form-check-label" for="defaultCheck1" style="color: rgb(55, 54, 54);">
