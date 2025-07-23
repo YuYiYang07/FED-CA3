@@ -22,13 +22,20 @@
     <!-- icon -->
     <link rel="icon" type="image/png" href="key-chain.png">
 
+    <!-- link to css file  -->
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body style="font-family: Figtree; font-weight: 600;">
+    <div style="font-size: 2.7em; text-align: center; background:linear-gradient(120deg, rgba(79, 214, 110, 0.543),#35b5e8, #4934a696, rgba(192, 119, 168, 0.883),rgba(163, 32, 32, 0.776)); color: white; padding-top: 50px; padding-bottom:45px">REPORT VULNERBILITIES</div>
     <div class="container">
         <div class="row">
             <div class="col-md-6 mx-auto my-5">
+                <div class="alert alert-danger" role="alert">
+                    You need to <strong> SIGN UP </strong> first to report the vulnerbilities, Thanks for your corporation
+                </div>
+                <br>
                 <div style="font-size: 2.5em; text-align: center;">Sign Up</div>
                 <br><br>
                 <form id="signupForm">
@@ -68,8 +75,7 @@
 
                     <div>
                         <label for="nric" class="form-label">NRIC/FIN</label>
-                        <input type="tel" class="form-control" id="nric"
-                            placeholder="S12345678">
+                        <input type="string" class="form-control" id="nric" placeholder="S12345678">
                     </div>
 
                     <br>
@@ -90,6 +96,7 @@
                         <label for="formGroupExampleInput2" class="form-label">Email</label>
                         <input type="email" class="form-control" id="formGroupExampleInput2"
                             placeholder="Enter your email">
+                        <p id="emailError" class="error-message"></p>
                     </div>
 
                     <br>
@@ -120,14 +127,21 @@
                     <div>
                         <label for="formGroupExampleInput" class="form-label">Password</label>
                         <input type="password" class="form-control" id="Password" placeholder="Enter your password">
+                        <div class="password-strength-container">
+                            <div class="password-strength-bar" id="passwordStrengthBar"></div>
+                        </div>
+                        <div class="password-strength-label" id="passwordStrengthLabel"></div>
+                        <p id="passwordError" class="error-message"></p>
                     </div>
                     <br>
                     <div>
                         <label for="formGroupExampleInput2" class="form-label">Confirm Password</label>
                         <input type="password" class="form-control" id="ConfirmPassword"
                             placeholder="Confirm your password">
+                        <p id="confirmError" class="error-message"></p>
                     </div>
-                    <br><hr><br>
+                    <br>
+                    <hr><br>
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="" id="Check1">
                         <label class="form-check-label" for="defaultCheck1" style="color: rgb(55, 54, 54);">
@@ -147,20 +161,21 @@
                     <br>
                     <div class="card" style="width: 18rem;">
                         <div class="card-body"
-                            style="background-color: rgb(212, 212, 212); border-radius: 0px; box-shadow: 10px;">
+                            style="background-color: rgb(212, 212, 212); border-radius: 0px; box-shadow: 10px; display: flex; flex-direction: row;">
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="checkRobot">
+                                <input class="form-check-input" type="checkbox" value="" id="checkRobot"
+                                    style="margin-top: 15px;">
                                 <label class="form-check-label" for="checkIndeterminate" style="margin-left: 10px;">
-                                    I'M NOT A ROBOT
+                                    <p style="margin-top: 12px;">I'M NOT A ROBOT</p>
                                 </label>
                             </div>
-                            <div style="display: flex;">
-                                <div style="color: rgb(93, 92, 92);">Restrictions for crawler: </div> <a
-                                    href="https://www.google.com/robots.txt" class="card-link"
-                                    style="margin-left: 5px;"> robot.txt</a>
+                            <div>
+                                <img src="captcha.png" alt="recaptcha logo"
+                                    style="width: 50px; height: 50px; margin-left: 20px;">
                             </div>
                         </div>
                     </div>
+                    <p id="checkboxError" class="error-message"></p>
                     <br><br>
                     <input type="submit" class="btn btn-primary btn-md"
                         style="padding-left: 20px; padding-right: 20px;">
@@ -172,6 +187,35 @@
     <!-- link to js file  -->
     <script src="script.js"></script>
 
+    <footer>
+            <div class="footer_main">
+                <div>
+                    <ul class="social-media-links">
+                        <li><a href="https://www.facebook.com" aria-label="facebook"><i id="icon-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com" aria-label="instagram"><i id="icon-instagram"></i></a>
+                        </li>
+                        <li><a href="https://www.x.com" aria-label="twitter"><i id="icon-x"></i></a></li>
+                        <li><a href="https://www.tiktok.com" aria-label="tiktok"><i id="icon-tiktok"></i></a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="footer-links">
+                        <li><a href="https://yuyiyang.vercel.app">About the Author</a></li>
+                        <li><a
+                                href="https://yyy-login.vercel.app">Report
+                                Vulnerability&#160;</a></li>
+                        <li><a href="https://www.microsoft.com/en-us/privacy/privacystatement">Privacy Statement</a>
+                        </li>
+                        <li><a href="https://policies.google.com/terms?hl=en-US">Terms of Use</a></li>
+                    </ul>
+                </div>
+                <div id="personal_contact_info">
+                    <p>SCHOOL EMAIL: </p><p>YIYANG.25@ICHAT.SP.EDU.SG</p>
+                </div>
+            </div>
+            <p class="rights">&copy;2025, YU YIYANG | Front-End-Development CA2</p>
+            <p class="rights"><img src="../images/SP.png" id="SP_logo">   Diploma in Common InfoComm Technology Year1 Class-05</p>
+        </footer>
 
 
 </body>
