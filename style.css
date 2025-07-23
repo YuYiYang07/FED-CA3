@@ -66,7 +66,7 @@ footer {
 }
 
 #icon-tiktok {
-  background: url(../images/tiktok.png);
+  background: url(tiktok.png);
   /* https://www.flaticon.com/ */
   color: white;
   display: inline-block;
@@ -78,7 +78,7 @@ footer {
 }
 
 #icon-x {
-  background: url(../images/twitter-alt.png);
+  background: url(twitter-alt.png);
   /* https://www.flaticon.com/ */
   display: inline-block;
   width: 32px;
@@ -89,7 +89,7 @@ footer {
 }
 
 #icon-instagram {
-  background: url(../images/instagram.png);
+  background: url(instagram.png);
   /* https://www.flaticon.com/ */
   display: inline-block;
   width: 32px;
@@ -100,7 +100,7 @@ footer {
 }
 
 #icon-facebook {
-  background: url(../images/Facebook.png);
+  background: url(Facebook.png);
   /* https://www.flaticon.com/ */
   display: inline-block;
   width: 32px;
