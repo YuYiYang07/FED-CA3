@@ -34,18 +34,24 @@
   min-height: 18px;
 }
 
-footer {
+@media screen and (min-width: 1921px) {
+  footer {
   padding: 50px;
   display: flex;
   flex-direction: column;
-  background: linear-gradient(120deg, rgba(64, 176, 90, 0.807), #1f6a88, #2b1d6ac7, rgba(106, 62, 91, 0.815), rgba(129, 25, 25, 0.923));
-  color: white;
 }
 
 .footer_main {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+}
+}
+
+@media screen and (max-width: 1921px) {
+  footer{
+    padding-bottom: 5%;
+  }
 }
 
 .social-media-links {
@@ -64,9 +70,11 @@ footer {
   padding-left: 20px;
   padding-top: 5px;
 }
+   
+
 
 #icon-tiktok {
-  background: url(tiktok.png);
+  background: url(../images/tiktok.png);
   /* https://www.flaticon.com/ */
   color: white;
   display: inline-block;
@@ -78,7 +86,7 @@ footer {
 }
 
 #icon-x {
-  background: url(twitter-alt.png);
+  background: url(../images/twitter-alt.png);
   /* https://www.flaticon.com/ */
   display: inline-block;
   width: 32px;
@@ -89,7 +97,7 @@ footer {
 }
 
 #icon-instagram {
-  background: url(instagram.png);
+  background: url(../images/instagram.png);
   /* https://www.flaticon.com/ */
   display: inline-block;
   width: 32px;
@@ -100,7 +108,7 @@ footer {
 }
 
 #icon-facebook {
-  background: url(facebook.png);
+  background: url(../images/Facebook.png);
   /* https://www.flaticon.com/ */
   display: inline-block;
   width: 32px;
@@ -117,6 +125,7 @@ footer {
   margin-left: 50px;
   padding-top: 5px;
 }
+
 
 .footer-links a {
   color: aliceblue;
