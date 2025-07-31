@@ -35,7 +35,7 @@
 }
 
 
- @media screen and (min-width: 1921px) {
+ @media screen and (min-width: 1366px) {
 footer {
   padding: 50px;
   display: flex;
@@ -64,9 +64,17 @@ footer {
   padding-left: 20px;
   padding-top: 5px;
 }
+
+#personal_contact_info {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin-left: 50px;
+  padding-top: 5px;
+}
 }
 
-@media screen and (max-width: 1921px) {
+@media screen and (max-width: 1365px) {
   footer{
     padding-bottom: 5%;
     overflow: hidden;
@@ -89,12 +97,17 @@ footer {
   display: flex;
   flex-direction: row;
   list-style-type: none;
-  gap: 3vw;
-  padding-left: 20px;
-  padding-top: 5px;
-  margin-bottom: 5%;
+  align-items: center;
+  justify-content: space-around;
+  margin-right: 5%;
 }
-} 
+
+#personal_contact_info p{
+  text-align: center;
+  padding-top: 5%;
+}
+}
+
 
 
 #icon-tiktok {
@@ -142,13 +155,7 @@ footer {
   margin-right: 10px;
 }
 
-#personal_contact_info {
-  display: flex;
-  flex-direction: row;
-  gap: 30px;
-  margin-left: 50px;
-  padding-top: 5px;
-}
+
 
 
 .footer-links a {
